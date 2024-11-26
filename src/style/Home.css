@@ -1,0 +1,134 @@
+/* .home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.home-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.home-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.home-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.home-rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.rating-button {
+  background-color: #d78888;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.rating-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.home-rating-number {
+  font-size: 18px;
+} */
+
+.home-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr ; /* עמודות: סרטים 2fr, סרטים 2fr, רשימת סרטים 1fr */
+   /* מרווח בין העמודות */
+  padding: 20px;
+}
+
+.home-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-image {
+  width: 25%;
+  height: auto;
+  border-radius: none;
+  margin-bottom: 10px;
+}
+
+.home-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.home-rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.rating-button {
+  background-color: #d78888;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.rating-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.home-rating-number {
+  font-size: 18px;
+}
+
+.movies-list {
+  list-style-type: none; /* מסיר את הנקודות מהרשימה */
+  padding: 0; /* מסיר ריווח פנימי */
+}
+
+.movies-list li {
+  flex: 1 1 150px; /* מאפשר לסרטים להתאים לגובה ולרוחב הרצויים */
+  max-width: 150px; /* קובע את רוחב המרבי של כל פריט */
+  height: 150px; /* גובה קבוע של הריבוע */
+  background-size: cover; /* מכסה את הריבוע בתמונה */
+  background-position: center; /* מרכז את התמונה */
+  background-repeat: no-repeat; /* מונע חזרה של התמונה */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #000; /* גבול הריבוע (אופציונלי) */
+}

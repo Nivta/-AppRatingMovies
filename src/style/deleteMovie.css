@@ -1,0 +1,37 @@
+.delete-movie-container {
+  background-color: aqua;
+  padding: 20px; 
+ 
+  width: 300px; /* רוחב הריבוע */
+  margin: 50px auto; /* מרכז את הריבוע במרכז הדף */
+  border-radius: 8px; /* פינות מעוגלות */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל לריבוע */
+  display: flex; /* מפעיל את flexbox */
+  flex-direction: column; /* מציב את הפריטים אחד מתחת לשני */
+  align-items: center; 
+}
+
+.delete-movie-title {
+  color: black; 
+  margin-bottom: 15px; 
+  line-height: 1.5; 
+}
+
+.delete-movie-input {
+  margin: 10px 0; 
+  padding: 5px; 
+  width: 80%; 
+  line-height: 1.5; /* רווח בין השורות */
+}
+
+.delete-movie-button {
+  padding: 5px 10px; 
+  background-color: blue; 
+  color: white;
+  border: none; /* הסרת גבול */
+  cursor: pointer; /* סמן יד */
+}
+
+.delete-movie-button:hover {
+  background-color: darkblue;
+}

@@ -1,0 +1,68 @@
+.Header {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+.navbar {
+  background-color: green;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid black;
+}
+
+.navbar button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 40px;
+  width: 120px;
+}
+
+.black {
+  background-color: black;
+  height: 5px;
+  width: 100%;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* רווח בין פריטים */
+  padding: 20px;
+  justify-content: space-between; /* רווח אחיד בין פריטים */
+}
+
+.movie-item {
+  flex: 1 1 150px; /* מאפשר לסרטים להתאים לגובה ולרוחב הרצויים */
+  max-width: 150px; /* קובע את רוחב המרבי של כל פריט */
+  height: 150px; /* גובה קבוע של הריבוע */
+  background-size: cover; /* מכסה את הריבוע בתמונה */
+  background-position: center; /* מרכז את התמונה */
+  background-repeat: no-repeat; /* מונע חזרה של התמונה */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #000; /* גבול הריבוע (אופציונלי) */
+}
+
+.movie-name {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* רקע כהה שקוף */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
